@@ -160,9 +160,10 @@ video::-webkit-media-controls {
 #allProjects{
     padding-bottom: 5%;
 }
-#bigProjectBanner{
+.bigProjectBanner{
     color: white;
     font-size: 300%;
+    text-align: center;
 }
 
 #subProjectBanner{
@@ -264,9 +265,6 @@ video::-webkit-media-controls {
     margin-left: 2.5%;
 }
 
-a{
-    color: white;
-}
 
 b{
     color: #ff1100;
@@ -276,3 +274,15 @@ b{
 u{
     color: lightseagreen;
 }
+
+a{
+    color: cornflowerblue;
+    transition: 0.5s;
+}
+
+a:hover{
+    background-color: cornflowerblue;
+    color: black;
+    transition: 0.5s;
+}
+

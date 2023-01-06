@@ -1,0 +1,53 @@
+body{
+    color: white;
+}
+.longText{
+    color: white;
+    font-size: 125%;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 1.5
+}
+.midText{
+    color: white;
+    font-size: 155%;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 1.5
+}
+.sp{
+    color: lightseagreen
+}
+
+#emp{
+    color: white;
+}
+
+table{
+    color: white;
+    font-size: 125%;
+    margin-left: 15%;
+    width: 70%;
+    margin-top: 4%;
+}
+
+table, td{
+    border: 1px solid white;
+}
+
+td{
+    padding: 2%;
+}
+
+.chartRight{
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+.chartLeft{
+    font-size: 125%;
+}
+
+a{
+    color: cornflowerblue
+}
