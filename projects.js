@@ -1,5 +1,6 @@
 $(document).ready(function(){ 
     let listOfProjects = [
+        
         {date: "1/2023", project: "Fireworks", description: "This small project uses the Tkinter module from Python to create a window to generate fireworks. The user can customize various aspects of fireworks by entering different values. Made in celebration for New Years' day!", githubLink: "", webLink: "https://github.com/origamitician/fireworks", circleNum: 8, tags: ["personal", "visual"], uses: ["Python"]},
     
         {date: "12/2022", project: "The PitchKeys Website", description: "This full-stack web application uses the MERN stack, and allows visitors to my YouTube channel to download the various files I use for my videos. My first project involving backend, and tracks (anonymous) user ratings as well as number of downloads.", githubLink: "https://github.com/pitchkeys/pitchkeys.github.io/", webLink: "https://pitchkeys.github.io", circleNum: 22, tags: ["personal", "full-stack", "mobile compatible", "routing"], uses: ["React", "Node.js", "MongoDB", "Express", "My own API"]},
