@@ -1,14 +1,14 @@
 $(document).ready(function(){ 
     let listOfProjects = [
-        {date: "8/2023", project: "Run Visualizer (Work In Progress)", description: "An interactive website that uses the Strava API to break down a users' run statistics into simple, yet detailed visualizations.", githubLink: "https://github.com/origamitician/run-visualizer", webLink: "https://strava-run-visualizer.cyclic.app", circleNum: 7, tags: ["personal", "visual", "mobile compatible"], uses: ["HTML", "CSS", "JS", "Strava API"]},
+        {date: "8/2023", project: "Run Visualizer (Work In Progress)", description: "An interactive website that uses the Strava API to break down a users' run statistics into simple, yet detailed visualizations.", githubLink: "https://github.com/origamitician/run-visualizer", webLink: "https://strava-run-visualizer.cyclic.cloud", circleNum: 7, tags: ["personal", "visual", "mobile compatible"], uses: ["HTML", "CSS", "JS", "Strava API"]},
 
         {date: "5/2023", project: "Social Gaming Web Platform (developed for Hawaii Digital Health Lab)", description: "This is a full-stack web application built on React and Meteor.js that allows adolescents to play games while their facial expressions are recorded over time. It was developed over the summer for one of the lab's projects, which involved using AI to predict developmental delays in children by looking into facial features. Videos of clients' faces while they are playing the games on the site would be recieved from this and then fed into AI models to predict these delays.", githubLink: "https://github.com/hawaiidigitalhealth/Social-Gaming-Web-Platform", webLink: "", circleNum: 17, tags: ["internship", "medical"], uses: ["React", "Node.js", "MongoDB", "Meteor.js"]},
 
-        {date: "1/2023", project: "Fireworks", description: "This small project uses the Tkinter module from Python to create a window to generate fireworks. The user can customize various aspects of fireworks by entering different values. Made in celebration for New Years' day!", githubLink: "", webLink: "https://github.com/origamitician/fireworks", circleNum: 8, tags: ["personal", "visual"], uses: ["Python"]},
+        {date: "1/2023", project: "Fireworks", description: "This small project uses the Tkinter module from Python to create a window to generate fireworks. The user can customize various aspects of fireworks by entering different values. Made in celebration for New Years' day!", githubLink: "https://github.com/origamitician/fireworks", webLink: "", circleNum: 8, tags: ["personal", "visual"], uses: ["Python"]},
     
         {date: "12/2022", project: "The PitchKeys Website", description: "This full-stack web application uses the MERN stack, and allows visitors to my YouTube channel to download the various files I use for my videos. My first project involving backend, and tracks (anonymous) user ratings as well as number of downloads.", githubLink: "https://github.com/pitchkeys/pitchkeys.github.io/", webLink: "https://pitchkeys.github.io", circleNum: 22, tags: ["personal", "full-stack", "mobile compatible", "routing"], uses: ["React", "Node.js", "MongoDB", "Express", "My own API"]},
     
-        {date: "5/2022", project: "Family Tree [Link disabled]", description: "I created this website for a school project. Primarily uses recursive Javascript to draw cells and lines. All names, photos, and biographies have been made anonymous, and have been replaced with placeholders for protection.", githubLink: "", webLink: "Screenshot%20(461).png", circleNum: 12, tags: ["personal", "school", "static", "mobile compatible", "single page"], uses: ["HTML", "CSS", "JS"]},
+        {date: "5/2022", project: "Family Tree [Link disabled]", description: "I created this website for a school project. Primarily uses recursive Javascript to draw cells and lines. All names, photos, and biographies have been made anonymous, and have been replaced with placeholders for protection.", githubLink: "https://github.com/origamitician/familytree", webLink: "", circleNum: 12, tags: ["personal", "school", "static", "mobile compatible", "single page"], uses: ["HTML", "CSS", "JS"]},
 
         {date: "3/2022", project: "Virus Simulator", description: "Just for fun. Uses JavaScript to clone fake 'virus' windows.", githubLink: "https://github.com/origamitician/notavirus1", webLink: "https://origamitician.github.io/notavirus1", circleNum: 7, tags: ["personal", "static", "visual", "single page"], uses: ["HTML", "CSS", "JS"]},
 
@@ -98,13 +98,16 @@ $(document).ready(function(){
             document.getElementsByClassName("tags")[i].appendChild(indivTags)
         }
 
-        let githubLink = document.createElement("a")
-        githubLink.className = "githubLink";
-        let inner = document.createTextNode("View Site →")
-        githubLink.append(inner);
-        githubLink.setAttribute("href", listOfProjects[i].webLink)
-        githubLink.setAttribute("target", "_blank")
-        document.getElementsByClassName("bottomFlex")[i].appendChild(githubLink)
+        if (listOfProjects[i].webLink != "") {
+            let githubLink = document.createElement("a")
+            githubLink.className = "githubLink";
+            let inner = document.createTextNode("View Site →")
+            githubLink.append(inner);
+            githubLink.setAttribute("href", listOfProjects[i].webLink)
+            githubLink.setAttribute("target", "_blank")
+            document.getElementsByClassName("bottomFlex")[i].appendChild(githubLink)
+        }
+        
     }
 
     /*$.each(listOfProjects, function(index, val){
