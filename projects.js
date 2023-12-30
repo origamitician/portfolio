@@ -86,7 +86,7 @@ $(document).ready(function(){
             document.getElementsByClassName("uses")[i].appendChild(indivUses)
         }
 
-        let tags = document.createElement("p")
+        /*let tags = document.createElement("p")
         tags.className = "tags";
         tags.innerHTML = "Tags: "
         document.getElementsByClassName("bfcl")[i].appendChild(tags)
@@ -96,7 +96,7 @@ $(document).ready(function(){
             indivTags.innerHTML = listOfProjects[i].tags[j]
             indivTags.className = "indivTags";
             document.getElementsByClassName("tags")[i].appendChild(indivTags)
-        }
+        }*/
 
         if (listOfProjects[i].webLink != "") {
             let githubLink = document.createElement("a")
