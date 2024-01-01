@@ -151,9 +151,12 @@ video::-webkit-media-controls {
 }
 
 .backLink{
-    font-size: 150%;
+    font-size: 400%;
     display: block;
     position: fixed;
+    margin-left: 0;
+    /*text-decoration: none;
+    border: 1px solid cornflowerblue;*/
 }
 
 /*from here, all css is for projects.html.*/
@@ -184,10 +187,17 @@ video::-webkit-media-controls {
     margin-top: -1.5%;
 }
 
+.mainCircle {
+    height: 30px;
+    width: 30px;
+}
+
 .subCircle{
     margin-top: 50%;
     margin-bottom: 50%;
     margin-left: 28%;
+    height: 10px;
+    width: 10px;
 }
 
 .leftDots{
@@ -286,3 +296,125 @@ a:hover{
     transition: 0.5s;
 }
 
+@media only screen and (max-aspect-ratio: 911/457){
+    video {
+        height: 120vh;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -20vh
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    #topLinkHolder{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
+        justify-content: center;
+        top: 5%;
+        left: 0%;
+
+    }
+
+    .topLinks {
+        font-size: 5vw;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    #videoOverlay{
+        width: 90%;
+        top: 50%;
+        left: 50%;
+    }
+
+    #big{
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    #sub {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    #mainBtn{
+        font-size: 5vw;
+        width : 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #fireworks{
+        width: 60%;
+    }
+
+    #msg, #yes, #no{
+        font-size: 3vw;
+    }
+
+    .bigProjectBanner {
+        font-size: 7vw;
+        margin-top: 10vh;
+    }
+
+    #subProjectBanner {
+        font-size: 5vw;
+    }
+
+    .backLink{
+        top: 0;
+        font-size: 8vw;
+        text-decoration: none;
+        border: 1px solid cornflowerblue;
+    }
+
+    .date {
+        font-size: 4vw;
+        margin-right: 5%;
+    }
+
+    .mainCircle {
+        height: 3vh;
+        width: 3vh;
+    }
+
+    .subCircle {
+        height: 1vh;
+        width: 1vh;
+    }
+
+    .projectLink {
+        font-size: 5vw;
+    }
+
+    .rightComponents {
+        margin-left: 5%;
+    }
+
+    .description {
+        font-size: 3vw;
+    }
+
+    .bottomFlex {
+        flex-direction: column;
+    }
+
+    .bfcl {
+        width: 100%;
+    }
+
+    .uses {
+        font-size: 3.5vw;
+    }
+
+    .githubLink {
+        width: 70%;
+        font-size: 4vw;
+        margin-left: 0;
+        margin-top: 2vh;
+    }
+
+    
+}

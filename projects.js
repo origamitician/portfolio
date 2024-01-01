@@ -47,11 +47,20 @@ $(document).ready(function(){
         let main = document.createElement("div");
         main.className = "mainCircle"
         document.getElementsByClassName("verticalDots")[i].appendChild(main)
-        for(let j = 0; j < listOfProjects[i].circleNum; j++){
-            let sub = document.createElement("div");
-            sub.className = "subCircle"
-            document.getElementsByClassName("verticalDots")[i].appendChild(sub)
+        if (window.innerWidth > window.innerHeight) {
+            for(let j = 0; j < listOfProjects[i].circleNum; j++){
+                let sub = document.createElement("div");
+                sub.className = "subCircle"
+                document.getElementsByClassName("verticalDots")[i].appendChild(sub)
+            }
+        } else {
+            for(let j = 0; j < listOfProjects[i].circleNum * 2; j++){
+                let sub = document.createElement("div");
+                sub.className = "subCircle"
+                document.getElementsByClassName("verticalDots")[i].appendChild(sub)
+            }
         }
+        
 
         let link = document.createElement("a")
         link.className = "projectLink";
@@ -116,8 +125,8 @@ $(document).ready(function(){
        
     })*/
 
-    $(".mainCircle").css({"height": "30px", "width": "30px", "background-color": "cornflowerblue", "border-radius": "50%"})
-    $(".subCircle").css({"height": "10px", "width": "10px", "border": "2px solid cornflowerblue", "border-radius": "50%"})
+    $(".mainCircle").css({/*"height": "30px", "width": "30px", */"background-color": "cornflowerblue", "border-radius": "50%"})
+    $(".subCircle").css({/*"height": "10px", "width": "10px", */"border": "2px solid cornflowerblue", "border-radius": "50%"})
 
    
     
